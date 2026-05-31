@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Personal website for Julia Wang: selected work, background, and contact links."
+    >
+    <title>Julia Wang | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Julia Wang home">
+          <span class="brand-mark">JW</span>
+          <span>Julia Wang</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span aria-hidden="true">Light</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Builder / Designer / Storyteller</p>
+          <h1>Hi, I'm Julia Wang. I create thoughtful digital experiences.</h1>
+          <p class="hero-text">
+            I bring together product thinking, clean design, and practical engineering to turn
+            early ideas into useful, memorable web experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">See my work</a>
+            <a class="button secondary" href="mailto:hello@example.com">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Profile highlights">
+          <div class="portrait" aria-hidden="true">
+            <span>JW</span>
+          </div>
+          <div>
+            <p class="card-label">Currently exploring</p>
+            <p class="card-title">Human-centered products, creative tooling, and calm interfaces.</p>
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>8+</dt>
+              <dd>Projects shipped</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>Core disciplines</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section split" id="about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Design-minded, detail-oriented, and curious.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            I enjoy working across strategy, interface design, and front-end implementation. My
+            favorite projects start with a real user need and end with something simple enough to
+            feel obvious.
+          </p>
+          <p>
+            Outside of building, I'm usually reading, collecting visual references, or learning a
+            new workflow that helps ideas move faster from sketch to screen.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Recent projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <h3>Portfolio System</h3>
+            <p>
+              A lightweight content system for showcasing creative work with fast publishing,
+              flexible project pages, and a clean editorial layout.
+            </p>
+            <a href="#contact" aria-label="Discuss Portfolio System project">Discuss project</a>
+          </article>
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <h3>Launch Dashboard</h3>
+            <p>
+              A focused dashboard concept for planning launches, tracking milestones, and keeping
+              cross-functional teams aligned.
+            </p>
+            <a href="#contact" aria-label="Discuss Launch Dashboard project">Discuss project</a>
+          </article>
+          <article class="project-card">
+            <span class="project-number">03</span>
+            <h3>Creative Notes</h3>
+            <p>
+              A calm note-taking interface designed around quick capture, visual organization, and
+              low-friction review rituals.
+            </p>
+            <a href="#contact" aria-label="Discuss Creative Notes project">Discuss project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Have an idea worth shaping?</h2>
+          <p>
+            I'm open to collaborations, portfolio conversations, and new product challenges. Send a
+            note and I'll get back to you.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Julia Wang. Built with care.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
