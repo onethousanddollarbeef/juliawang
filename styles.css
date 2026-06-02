@@ -328,6 +328,29 @@ h3 {
   margin-bottom: 34px;
 }
 
+.experience-section {
+  border-top: 1px solid var(--line);
+}
+
+.experience-card {
+  max-width: 860px;
+}
+
+.experience-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.experience-list li {
+  color: var(--muted);
+}
+
+.experience-list strong {
+  color: var(--text);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
