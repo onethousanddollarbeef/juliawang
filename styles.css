@@ -307,8 +307,8 @@ h3 {
 
 .split {
   display: grid;
-  grid-template-columns: 0.85fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr;
+  gap: 34px;
   border-top: 1px solid var(--line);
 }
 
@@ -416,6 +416,13 @@ h3 {
 
 .skills-panel {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.coursework-panel,
+.skills-panel,
+.contact-card,
+.course-filter-group {
+  max-width: 860px;
 }
 
 .coursework-panel,
@@ -528,8 +535,8 @@ h3 {
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr minmax(280px, 0.48fr);
-  gap: 44px;
+  grid-template-columns: 1fr;
+  gap: 28px;
   align-items: start;
   border-top: 1px solid var(--line);
 }
