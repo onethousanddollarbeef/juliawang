@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=profile-photo-20260602">
+    <link rel="stylesheet" href="styles.css?v=coursework-semesters-20260602">
   </head>
   <body>
     <header class="site-header">
@@ -152,33 +152,72 @@
       <section class="section split" id="coursework">
         <div>
           <p class="eyebrow">Relevant coursework</p>
-          <h2>Classes that support my technical and product work.</h2>
+          <h2>Coursework organized by semester.</h2>
         </div>
-        <div class="course-grid">
-          <article class="info-card">
-            <h3>Computer science foundations</h3>
-            <ul>
-              <li>Data Structures and Algorithms</li>
-              <li>Object-Oriented Programming</li>
-              <li>Database Systems</li>
-            </ul>
-          </article>
-          <article class="info-card">
-            <h3>Web and interface design</h3>
-            <ul>
-              <li>Web Development</li>
-              <li>Human-Computer Interaction</li>
-              <li>UI/UX Design</li>
-            </ul>
-          </article>
-          <article class="info-card">
-            <h3>Product and analysis</h3>
-            <ul>
-              <li>Software Engineering</li>
-              <li>Statistics and Data Analysis</li>
-              <li>Product Management</li>
-            </ul>
-          </article>
+        <div class="coursework-panel">
+          <div class="semester-tabs" role="tablist" aria-label="Coursework semester filters">
+            <button class="semester-tab is-active" type="button" role="tab" aria-selected="true" data-course-tab="all">
+              All
+            </button>
+            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="fall-2024">
+              Fall 2024
+            </button>
+            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="spring-2025">
+              Spring 2025
+            </button>
+            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="fall-2025">
+              Fall 2025
+            </button>
+            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="spring-2026">
+              Spring 2026
+            </button>
+          </div>
+
+          <div class="course-list">
+            <article class="info-card course-panel" data-course-panel="all">
+              <h3>All relevant coursework</h3>
+              <ul>
+                <li><strong>Fall 2024:</strong> Introduction to Computer Science, Cognitive Science Foundations, Calculus and Quantitative Reasoning</li>
+                <li><strong>Spring 2025:</strong> Object-Oriented Programming, Decision Science, Research Methods</li>
+                <li><strong>Fall 2025:</strong> Data Structures and Algorithms, Human-Computer Interaction, Statistics and Data Analysis</li>
+                <li><strong>Spring 2026:</strong> Web Development, Database Systems, Software Engineering, UI/UX Design, Product Management</li>
+              </ul>
+            </article>
+            <article class="info-card course-panel" data-course-panel="fall-2024" hidden>
+              <h3>Fall 2024</h3>
+              <ul>
+                <li>Introduction to Computer Science</li>
+                <li>Cognitive Science Foundations</li>
+                <li>Calculus and Quantitative Reasoning</li>
+              </ul>
+            </article>
+            <article class="info-card course-panel" data-course-panel="spring-2025" hidden>
+              <h3>Spring 2025</h3>
+              <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Decision Science</li>
+                <li>Research Methods</li>
+              </ul>
+            </article>
+            <article class="info-card course-panel" data-course-panel="fall-2025" hidden>
+              <h3>Fall 2025</h3>
+              <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Human-Computer Interaction</li>
+                <li>Statistics and Data Analysis</li>
+              </ul>
+            </article>
+            <article class="info-card course-panel" data-course-panel="spring-2026" hidden>
+              <h3>Spring 2026</h3>
+              <ul>
+                <li>Web Development</li>
+                <li>Database Systems</li>
+                <li>Software Engineering</li>
+                <li>UI/UX Design</li>
+                <li>Product Management</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -237,6 +276,6 @@
       <a href="#home">Back to top</a>
     </footer>
 
-    <script src="script.js?v=profile-photo-20260602"></script>
+    <script src="script.js?v=coursework-semesters-20260602"></script>
   </body>
 </html>

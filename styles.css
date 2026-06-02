@@ -395,6 +395,50 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.coursework-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.semester-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.semester-tab {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.semester-tab:hover,
+.semester-tab.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #f7fdff;
+}
+
+.course-list {
+  display: grid;
+  gap: 18px;
+}
+
+.course-panel[hidden] {
+  display: none;
+}
+
+.course-panel strong {
+  color: var(--text);
+}
+
 .info-card ul {
   margin: 0;
   padding-left: 18px;
