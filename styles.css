@@ -351,6 +351,45 @@ h3 {
   color: var(--text);
 }
 
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.resume-card {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+}
+
+.resume-entry + .resume-entry {
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.resume-entry h3 {
+  margin-bottom: 8px;
+}
+
+.resume-meta {
+  margin-bottom: 12px;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-entry ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.resume-entry li + li {
+  margin-top: 8px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -607,7 +646,8 @@ h3 {
 
   .project-grid,
   .course-grid,
-  .skills-panel {
+  .skills-panel,
+  .resume-grid {
     grid-template-columns: 1fr;
   }
 }
