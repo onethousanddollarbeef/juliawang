@@ -395,17 +395,33 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.coursework-panel {
+.coursework-panel,
+.course-filter-group {
   display: grid;
   gap: 18px;
 }
 
+.course-filter-group {
+  gap: 10px;
+}
+
+.filter-label {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.subject-tabs,
 .semester-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
+.subject-tab,
 .semester-tab {
   min-height: 38px;
   padding: 0 14px;
@@ -419,7 +435,9 @@ h3 {
   font-weight: 800;
 }
 
+.subject-tab:hover,
 .semester-tab:hover,
+.subject-tab.is-active,
 .semester-tab.is-active {
   border-color: var(--accent);
   background: var(--accent);
@@ -431,12 +449,30 @@ h3 {
   gap: 18px;
 }
 
-.course-panel[hidden] {
+.course-bullet-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.course-item[hidden] {
   display: none;
 }
 
-.course-panel strong {
-  color: var(--text);
+.course-meta {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.course-empty {
+  margin: 0;
+  color: var(--muted);
 }
 
 .info-card ul {

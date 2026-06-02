@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=coursework-semesters-20260602">
+    <link rel="stylesheet" href="styles.css?v=coursework-subjects-20260602">
   </head>
   <body>
     <header class="site-header">
@@ -152,72 +152,107 @@
       <section class="section split" id="coursework">
         <div>
           <p class="eyebrow">Relevant coursework</p>
-          <h2>Coursework organized by semester.</h2>
+          <h2>Filter coursework by subject and semester.</h2>
         </div>
         <div class="coursework-panel">
-          <div class="semester-tabs" role="tablist" aria-label="Coursework semester filters">
-            <button class="semester-tab is-active" type="button" role="tab" aria-selected="true" data-course-tab="all">
-              All
-            </button>
-            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="fall-2024">
-              Fall 2024
-            </button>
-            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="spring-2025">
-              Spring 2025
-            </button>
-            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="fall-2025">
-              Fall 2025
-            </button>
-            <button class="semester-tab" type="button" role="tab" aria-selected="false" data-course-tab="spring-2026">
-              Spring 2026
-            </button>
+          <div class="course-filter-group">
+            <p class="filter-label">Choose coursework area</p>
+            <div class="subject-tabs" aria-label="Coursework subject filters">
+              <button class="subject-tab is-active" type="button" aria-pressed="true" data-course-subject-filter="all">
+                All subjects
+              </button>
+              <button class="subject-tab" type="button" aria-pressed="false" data-course-subject-filter="computer-science">
+                Computer Science
+              </button>
+              <button class="subject-tab" type="button" aria-pressed="false" data-course-subject-filter="cognitive-science">
+                Cognitive Science
+              </button>
+            </div>
           </div>
 
-          <div class="course-list">
-            <article class="info-card course-panel" data-course-panel="all">
-              <h3>All relevant coursework</h3>
-              <ul>
-                <li><strong>Fall 2024:</strong> Introduction to Computer Science, Cognitive Science Foundations, Calculus and Quantitative Reasoning</li>
-                <li><strong>Spring 2025:</strong> Object-Oriented Programming, Decision Science, Research Methods</li>
-                <li><strong>Fall 2025:</strong> Data Structures and Algorithms, Human-Computer Interaction, Statistics and Data Analysis</li>
-                <li><strong>Spring 2026:</strong> Web Development, Database Systems, Software Engineering, UI/UX Design, Product Management</li>
-              </ul>
-            </article>
-            <article class="info-card course-panel" data-course-panel="fall-2024" hidden>
-              <h3>Fall 2024</h3>
-              <ul>
-                <li>Introduction to Computer Science</li>
-                <li>Cognitive Science Foundations</li>
-                <li>Calculus and Quantitative Reasoning</li>
-              </ul>
-            </article>
-            <article class="info-card course-panel" data-course-panel="spring-2025" hidden>
-              <h3>Spring 2025</h3>
-              <ul>
-                <li>Object-Oriented Programming</li>
-                <li>Decision Science</li>
-                <li>Research Methods</li>
-              </ul>
-            </article>
-            <article class="info-card course-panel" data-course-panel="fall-2025" hidden>
-              <h3>Fall 2025</h3>
-              <ul>
-                <li>Data Structures and Algorithms</li>
-                <li>Human-Computer Interaction</li>
-                <li>Statistics and Data Analysis</li>
-              </ul>
-            </article>
-            <article class="info-card course-panel" data-course-panel="spring-2026" hidden>
-              <h3>Spring 2026</h3>
-              <ul>
-                <li>Web Development</li>
-                <li>Database Systems</li>
-                <li>Software Engineering</li>
-                <li>UI/UX Design</li>
-                <li>Product Management</li>
-              </ul>
-            </article>
+          <div class="course-filter-group">
+            <p class="filter-label">Choose semesters</p>
+            <div class="semester-tabs" aria-label="Coursework semester filters">
+              <button class="semester-tab is-active" type="button" aria-pressed="true" data-course-semester-filter="all">
+                All semesters
+              </button>
+              <button class="semester-tab" type="button" aria-pressed="false" data-course-semester-filter="fall-2024">
+                Fall 2024
+              </button>
+              <button class="semester-tab" type="button" aria-pressed="false" data-course-semester-filter="spring-2025">
+                Spring 2025
+              </button>
+              <button class="semester-tab" type="button" aria-pressed="false" data-course-semester-filter="fall-2025">
+                Fall 2025
+              </button>
+              <button class="semester-tab" type="button" aria-pressed="false" data-course-semester-filter="spring-2026">
+                Spring 2026
+              </button>
+            </div>
           </div>
+
+          <article class="info-card course-list" aria-live="polite">
+            <h3>Displayed coursework</h3>
+            <ul class="course-bullet-list">
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="fall-2024">
+                <span class="course-meta">Computer Science / Fall 2024</span>
+                <span>Introduction to Computer Science</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="fall-2024">
+                <span class="course-meta">Cognitive Science / Fall 2024</span>
+                <span>Cognitive Science Foundations</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="fall-2024">
+                <span class="course-meta">Computer Science / Fall 2024</span>
+                <span>Calculus and Quantitative Reasoning</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="spring-2025">
+                <span class="course-meta">Computer Science / Spring 2025</span>
+                <span>Object-Oriented Programming</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="spring-2025">
+                <span class="course-meta">Cognitive Science / Spring 2025</span>
+                <span>Decision Science</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="spring-2025">
+                <span class="course-meta">Cognitive Science / Spring 2025</span>
+                <span>Research Methods</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="fall-2025">
+                <span class="course-meta">Computer Science / Fall 2025</span>
+                <span>Data Structures and Algorithms</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="fall-2025">
+                <span class="course-meta">Cognitive Science / Fall 2025</span>
+                <span>Human-Computer Interaction</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="fall-2025">
+                <span class="course-meta">Cognitive Science / Fall 2025</span>
+                <span>Statistics and Data Analysis</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="spring-2026">
+                <span class="course-meta">Computer Science / Spring 2026</span>
+                <span>Web Development</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="spring-2026">
+                <span class="course-meta">Computer Science / Spring 2026</span>
+                <span>Database Systems</span>
+              </li>
+              <li class="course-item" data-course-subject="computer-science" data-course-semester="spring-2026">
+                <span class="course-meta">Computer Science / Spring 2026</span>
+                <span>Software Engineering</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="spring-2026">
+                <span class="course-meta">Cognitive Science / Spring 2026</span>
+                <span>UI/UX Design</span>
+              </li>
+              <li class="course-item" data-course-subject="cognitive-science" data-course-semester="spring-2026">
+                <span class="course-meta">Cognitive Science / Spring 2026</span>
+                <span>Product Management</span>
+              </li>
+            </ul>
+            <p class="course-empty" hidden>No coursework matches the selected filters.</p>
+          </article>
         </div>
       </section>
 
@@ -276,6 +311,6 @@
       <a href="#home">Back to top</a>
     </footer>
 
-    <script src="script.js?v=coursework-semesters-20260602"></script>
+    <script src="script.js?v=coursework-subjects-20260602"></script>
   </body>
 </html>
