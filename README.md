@@ -4,7 +4,7 @@ A dependency-free personal website built with HTML, CSS, and a small JavaScript 
 
 ## Hosted site
 
-This site is configured to deploy with GitHub Pages after changes are merged to `main`.
+This site is configured to deploy with GitHub Pages from the `main` branch at the repository root.
 
 Expected GitHub Pages URL:
 
@@ -19,9 +19,10 @@ The site uses relative asset paths, so it can also run behind a custom domain.
 To use your own domain:
 
 1. In GitHub, open **Settings > Pages** for this repository.
-2. Set the custom domain, such as `www.yourdomain.com`.
-3. Add the DNS records GitHub shows for that domain.
-4. If you want the domain stored in the repository, add a `CNAME` file at the project root with only the domain name inside.
+2. Keep the source set to deploy from `main` and `/`.
+3. Set the custom domain, such as `www.yourdomain.com`.
+4. Add the DNS records GitHub shows for that domain.
+5. If you want the domain stored in the repository, add a `CNAME` file at the project root with only the domain name inside.
 
 ## Local preview
 
