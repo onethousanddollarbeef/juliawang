@@ -2,7 +2,6 @@ const root = document.documentElement;
 const toggle = document.querySelector(".theme-toggle");
 const year = document.querySelector("#year");
 const storedTheme = localStorage.getItem("theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 const setTheme = (theme) => {
   root.dataset.theme = theme;
@@ -10,7 +9,7 @@ const setTheme = (theme) => {
   toggle.textContent = theme === "dark" ? "Dark" : "Light";
 };
 
-setTheme(storedTheme || (prefersDark ? "dark" : "light"));
+setTheme(storedTheme || "light");
 
 toggle.addEventListener("click", () => {
   setTheme(root.dataset.theme === "dark" ? "light" : "dark");
