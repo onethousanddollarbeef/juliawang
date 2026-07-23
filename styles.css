@@ -405,7 +405,7 @@ h3 {
 }
 
 .project-number {
-  margin-bottom: auto;
+  margin-bottom: 10px;
   color: var(--accent-strong);
   font-weight: 800;
 }
